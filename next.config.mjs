@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Tells Next.js to generate static HTML files
+  output: "export",
   images: {
-    unoptimized: true, // Required for static export (GitHub Pages)
+    unoptimized: true,
   },
+  basePath: "/Tekmakon", // <-- Replace "tekmakon" with your ACTUAL repo name if different
+  assetPrefix: "/Tekmakon", // <-- Replace "tekmakon" with your ACTUAL repo name
 };
 
 export default nextConfig;
