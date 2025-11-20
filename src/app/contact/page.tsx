@@ -22,19 +22,19 @@ export default function ContactPage() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Mail className="h-5 w-5" />
                 </div>
-                <span>contact@tekmakon.com</span>
+                <span>to be placed</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Phone className="h-5 w-5" />
                 </div>
-                <span>+1 (555) 000-0000</span>
+                <span>+to be placed</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <MapPin className="h-5 w-5" />
                 </div>
-                <span>Tech City, Innovation District</span>
+                <span>Calamba City, Philippines</span>
               </div>
             </div>
           </div>
@@ -45,17 +45,17 @@ export default function ContactPage() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
                   <label className="text-sm font-medium">First Name</label>
-                  <input type="text" className="w-full rounded-md border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="John" />
+                  <input type="text" className="w-full rounded-md border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Juan" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Last Name</label>
-                  <input type="text" className="w-full rounded-md border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Doe" />
+                  <input type="text" className="w-full rounded-md border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Dela Cruz" />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <label className="text-sm font-medium">Email</label>
-                <input type="email" className="w-full rounded-md border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="john@company.com" />
+                <input type="email" className="w-full rounded-md border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="juan@company.com" />
               </div>
 
               <div className="space-y-2">
