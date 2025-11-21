@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="flex h-8 w-8 items-center justify-center rounded bg-primary text-white">
             <Zap className="h-5 w-5" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-secondary">TekMakon</span>
+          <span className="text-xl font-bold tracking-tight text-secondary">TekMaKon</span>
         </Link>
 
         {/* Desktop Nav */}
