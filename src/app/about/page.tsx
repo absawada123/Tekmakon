@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer"
 import Team from "@/sections/Team"
 import Image from "next/image"
 
-const imgUrl = "/media/aboutBg.jpg"
+const imgUrl = "/media/aboutBg.JPG"
 
 export default function AboutPage() {
   return (
