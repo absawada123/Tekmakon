@@ -64,6 +64,7 @@ export default function ContactPage() {
                   <option>General Inquiry</option>
                   <option>Project Quote</option>
                   <option>Partnership</option>
+                  <option>Request Demo</option>
                 </select>
               </div>
 
