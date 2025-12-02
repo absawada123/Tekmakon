@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "TekMakon | Engineering Smart Systems",
   description: "Intelligent solutions in IoT, automation, software engineering, and real-time energy optimization.",
   icons: {
-    icon: "/favicon.ico", // Assumes you will add a favicon later
+    icon: "/media/logo/Tekmakon-lightmode.svg", // Assumes you will add a favicon later
   },
 };
 
