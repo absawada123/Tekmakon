@@ -12,9 +12,9 @@ export default function ContactPage() {
           
           {/* Contact Info */}
           <div>
-            <h1 className="mb-6 text-4xl font-bold">Get in Touch</h1>
+            <h1 className="mb-6 text-4xl font-bold">Start a project with TekMakon</h1>
             <p className="mb-8 text-lg text-muted-foreground">
-              Have a project in mind? Fill out the form or reach out to us directly.
+              Tell us about your system, and get a tailored plan for IoT, automation, or software in a few business days.
             </p>
             
             <div className="space-y-6">
@@ -22,13 +22,13 @@ export default function ContactPage() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Mail className="h-5 w-5" />
                 </div>
-                <span>to be placed</span>
+                <span>tekmakon2025@gmail.com</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Phone className="h-5 w-5" />
                 </div>
-                <span>+to be placed</span>
+                <span>+63 968 493 6438</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">

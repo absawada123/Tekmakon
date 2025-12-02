@@ -3,6 +3,9 @@ import Footer from "@/components/layout/Footer"
 import { Button } from "@/components/ui/button"
 import { Cpu, Server, LineChart, Settings, ShieldCheck, Zap } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
+
+const imgUrl = '/media/servicesBg.jpg'
 
 const services = [
   {
@@ -41,10 +44,23 @@ export default function ServicesPage() {
   return (
     <>
       <Navbar />
-      
+    
       {/* Header */}
-      <div className="bg-secondary py-20 text-secondary-foreground">
-        <div className="container">
+      <div className="relative bg-secondary py-20 text-secondary-foreground overflow-hidden">
+        {/* Image container with relative positioning */}
+        <div className="absolute inset-0">
+          <Image
+            src={imgUrl}
+            alt="Our team building a system"
+            fill
+            className="object-cover transition-transform duration-300 hover:scale-105"
+          />
+          {/* Optional dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+
+        {/* Content on top of image */}
+        <div className="container relative z-10">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">Our Services</h1>
           <p className="mt-6 max-w-2xl text-lg text-gray-300">
             We bridge the gap between physical hardware and digital intelligence.
