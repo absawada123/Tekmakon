@@ -3,6 +3,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "framer-motion"
 
 // Define the shape of a single team member object
@@ -12,6 +13,7 @@ interface TeamMember {
   desc: string
   imageUrl: string
   alt: string
+  link?: string // Made optional since not all members have a link
 }
 
 // Team data
@@ -36,6 +38,7 @@ const team: TeamMember[] = [
     desc: "Engineering Lead",
     imageUrl: "/media/ab.jpg",
     alt: "Portrait of AB",
+    link: "https://absawada123.github.io/absawada"
   },
   {
     name: "Austin",
@@ -59,13 +62,12 @@ export default function Team() {
         >
           <div className="px-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-foreground mb-4">
-            Meet the TekMakon Team
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Our diverse team of experts brings together decades of experience in IoT, automation, and software engineering.
-          </p>
+              Meet the TekMakon Team
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Our diverse team of experts brings together decades of experience in IoT, automation, and software engineering.
+            </p>
           </div>
-          
         </motion.div>
 
         {/* Full-width grid with no gaps */}
@@ -108,6 +110,19 @@ export default function Team() {
 
               {/* Optional: Decorative border on hover */}
               <div className="absolute inset-0 border-2 border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+
+              {/* Full Card Link Overlay (if link exists) */}
+              {member.link && (
+                <Link 
+                  href={member.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 z-20 focus:outline-none"
+                  aria-label={`Visit ${member.name}'s profile`}
+                >
+                  <span className="sr-only">Visit {member.name}'s profile</span>
+                </Link>
+              )}
             </motion.div>
           ))}
         </div>
